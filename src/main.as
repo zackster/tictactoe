@@ -19,7 +19,7 @@ function init():void {
 //	for(var i:int = 0;i<10;i++) {
 //		trace("Zack loop #2: " + i);
 //	//
-	var testRun:Boolean = true;
+	var testRun:Boolean = false;
 
 	var game:TicTacToeLogic = new TicTacToeLogic();
 	game.initialize();

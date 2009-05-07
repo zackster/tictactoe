@@ -2,4 +2,15 @@
 <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute"
 	applicationComplete="init()">
 	<mx:Script source="main.as" />
+	<mx:Button x="319" y="247" label="-" width="73" height="61" id="_0_0" click="playerMove"/>
+	<mx:Button x="400" y="247" label="-" width="73" height="61" id="_0_1" click="playerMove"/>
+	<mx:Button x="480" y="247" label="-" width="73" height="61" id="_0_2" click="playerMove"/>
+	<mx:Button x="319" y="316" label="-" width="73" height="61" id="_1_0" click="playerMove"/>
+	<mx:Button x="400" y="316" label="-" width="73" height="61" id="_1_1" click="playerMove"/>
+	<mx:Button x="480" y="316" label="-" width="73" height="61" id="_1_2" click="playerMove"/>
+	<mx:Button x="319" y="385" label="-" width="73" height="61" id="_2_0" click="playerMove"/>
+	<mx:Button x="400" y="385" label="-" width="73" height="61" id="_2_1" click="playerMove"/>
+	<mx:Button x="480" y="385" label="-" width="73" height="61" id="_2_2" click="playerMove"/>
+	<mx:Button x="480" y="454" label="Reset" width="73" height="24" id="reset" click="resetBoard"/>
+	<mx:Label x="319" y="454" text="Welcome to SikZakToe" width="154" height="24" color="#000000"/>
 </mx:Application>
