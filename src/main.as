@@ -19,9 +19,77 @@ function init():void {
 //	for(var i:int = 0;i<10;i++) {
 //		trace("Zack loop #2: " + i);
 //	//
+	var testRun:Boolean = true;
+
 	var game:TicTacToeLogic = new TicTacToeLogic();
 	game.initialize();
-	game.outputBoard();
-	game.placeToken(1, 1, 1);
-	game.outputBoard();
+	
+	
+	if (testRun == true) {
+		game.outputBoard();
+		trace("Game over? " + game.checkBoard().toString());
+		
+		// Column tests
+		trace("Column tests...");
+		trace("Prepopulate test. Game over? " + game.checkBoard().toString());
+		game.placeToken(0, 0, 1);
+		game.placeToken(1, 0, 1);
+		game.placeToken(2, 0, 1);
+		trace("Postpopulate test. Game over? " + game.checkBoard().toString());
+		game.clearBoard();
+		
+		trace("Prepopulate test. Game over? " + game.checkBoard().toString());
+		game.placeToken(0, 1, 1);
+		game.placeToken(1, 1, 1);
+		game.placeToken(2, 1, 1);
+		trace("Postpopulate test. Game over? " + game.checkBoard().toString());
+		game.clearBoard();
+		
+		trace("Prepopulate test. Game over? " + game.checkBoard().toString());
+		game.placeToken(0, 2, 1);
+		game.placeToken(1, 2, 1);
+		game.placeToken(2, 2, 1);
+		trace("Postpopulate test. Game over? " + game.checkBoard().toString());
+		game.clearBoard();
+		
+		// Row tests
+		trace("Row tests...");
+		trace("Prepopulate test. Game over? " + game.checkBoard().toString());
+		game.placeToken(0, 0, 1);
+		game.placeToken(0, 1, 1);
+		game.placeToken(0, 2, 1);
+		trace("Postpopulate test. Game over? " + game.checkBoard().toString());
+		game.clearBoard();
+		
+		trace("Prepopulate test. Game over? " + game.checkBoard().toString());
+		game.placeToken(1, 0, 1);
+		game.placeToken(1, 1, 1);
+		game.placeToken(1, 2, 1);
+		trace("Postpopulate test. Game over? " + game.checkBoard().toString());
+		game.clearBoard();
+		
+		trace("Prepopulate test. Game over? " + game.checkBoard().toString());
+		game.placeToken(2, 0, 1);
+		game.placeToken(2, 1, 1);
+		game.placeToken(2, 2, 1);
+		trace("Postpopulate test. Game over? " + game.checkBoard().toString());
+		game.clearBoard();
+		
+		// Diagonal tests
+		trace("Diagonal tests...");
+		trace("Prepopulate test. Game over? " + game.checkBoard().toString());
+		game.placeToken(0, 0, 1);
+		game.placeToken(1, 1, 1);
+		game.placeToken(2, 2, 1);
+		trace("Postpopulate test. Game over? " + game.checkBoard().toString());
+		game.clearBoard();
+		
+		trace("Prepopulate test. Game over? " + game.checkBoard().toString());
+		game.placeToken(0, 2, 1);
+		game.placeToken(1, 1, 1);
+		game.placeToken(2, 0, 1);
+		game.outputBoard();
+		trace("Postpopulate test. Game over? " + game.checkBoard().toString());
+		game.clearBoard();
+	}
 }
